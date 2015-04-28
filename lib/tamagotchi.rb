@@ -2,7 +2,7 @@ class Tamagotchi
   @@food_level = 100
   @@sleep_level = 100
   @@activity_level = 100
-
+  @@Tam = []
   define_method(:initialize) do |name|
     @name = name
   end
@@ -33,5 +33,11 @@ class Tamagotchi
     end
   end
 
+  define_method(:all) do
+  @@Tam
+  end
 
+  define_method(:save) do
+   @@Tam.push(self)
+ end
 end

@@ -6,6 +6,21 @@
 <h2><%= @name %>'s Levels </h2>
 
 <ul>
-    <li> <%= @food_level %> </li>
-
+    <li> Food levels <%= @food_level %> </li>
+    <li> Sleep levels <%= @sleep_level %> </li>
+    <li> Activity levels <%= @activity_level %> </li>
 </ul>
+
+<h2> What do you want to do with <%= @name %> </h2>
+<h2></h2>
+<h2> You have three choices: </h2>
+<ul>
+  <li> For sleep type: "sleep"</li>
+  <li> To feed <%= @name %> type: "feed" </li>
+  <li> To play with <%= @name %> type: "activity"
+</ul>
+<form action= "/an_action" method= "post">
+  <label for= "an_action"> Type action here: </label>
+  <input id= "an_action" name= "an_action" type= "text">
+  <button type= "submit" class="btn-success"> Submit activity</button>
+</form>
