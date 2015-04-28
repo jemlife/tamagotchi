@@ -44,7 +44,7 @@ class Tamagotchi
     end
   end
 
-  define_method(:all) do
+  define_singleton_method(:all) do
   @@Tam
   end
 
